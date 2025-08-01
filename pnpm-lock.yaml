@@ -14,6 +14,9 @@ importers:
       hast:
         specifier: ^1.0.0
         version: 1.0.0
+      hast-util-find-and-replace:
+        specifier: ^5.0.1
+        version: 5.0.1
       hast-util-whitespace:
         specifier: ^3.0.0
         version: 3.0.0
@@ -29,6 +32,9 @@ importers:
       unist-util-visit:
         specifier: ^5.0.0
         version: 5.0.0
+      unist-util-visit-parents:
+        specifier: ^6.0.1
+        version: 6.0.1
     devDependencies:
       '@types/node':
         specifier: ^24.1.0
@@ -54,7 +60,7 @@ importers:
 
   examples:
     dependencies:
-      '@abhabongse/rehype-enhanced-alert':
+      '@abhabongse/rehype-thaipography':
         specifier: workspace:*
         version: link:..
       '@types/hast':
@@ -66,12 +72,6 @@ importers:
       '@types/node':
         specifier: ^24.1.0
         version: 24.1.0
-      hast-util-whitespace:
-        specifier: ^3.0.0
-        version: 3.0.0
-      hastscript:
-        specifier: ^9.0.1
-        version: 9.0.1
       rehype:
         specifier: ^13.0.2
         version: 13.0.2
@@ -90,13 +90,10 @@ importers:
       to-vfile:
         specifier: ^8.0.0
         version: 8.0.0
-      unified:
-        specifier: ^11.0.5
-        version: 11.0.5
 
   test:
     dependencies:
-      '@abhabongse/rehype-enhanced-alert':
+      '@abhabongse/rehype-thaipography':
         specifier: workspace:*
         version: link:..
       '@types/hast':
@@ -574,11 +571,17 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
+  hast-util-find-and-replace@5.0.1:
+    resolution: {integrity: sha512-S12fTskO3Hf2IGCBWXs1UcXT8GEJ3jmvmPZJctkRwfl3a8jnGi8aFYT8kd2zcEH+VE0qcGgKF0ewt5BPAsfIhw==}
+
   hast-util-from-html@2.0.3:
     resolution: {integrity: sha512-CUSRHXyKjzHov8yKsQjGOElXy/3EKpyX56ELnkHH34vDVw1N1XSQ1ZcAvTyAPtGqLTuKP/uxM+aLkSPqF/EtMw==}
 
   hast-util-from-parse5@8.0.3:
     resolution: {integrity: sha512-3kxEVkEKt0zvcZ3hCRYI8rqrgwtlIOFMWkbclACvjlDw8Li9S2hk/d51OI0nr/gIpdMHNepwgOKqZ/sy0Clpyg==}
+
+  hast-util-is-element@3.0.0:
+    resolution: {integrity: sha512-Val9mnv2IWpLbNPqc/pUem+a7Ipj2aHacCwgNfTiK0vJKl0LF+4Ba4+v1oPHFpf3bLYmreq0/l3Gud9S5OH42g==}
 
   hast-util-parse-selector@4.0.0:
     resolution: {integrity: sha512-wkQCkSYoOGCRKERFWcxMVMOcYE2K1AaNLU8DXS9arxnLOUEWbOXKXiJUNzEpqZ3JOKpnha3jkFrumEjVliDe7A==}
@@ -1871,6 +1874,13 @@ snapshots:
 
   has-flag@4.0.0: {}
 
+  hast-util-find-and-replace@5.0.1:
+    dependencies:
+      '@types/hast': 3.0.4
+      escape-string-regexp: 5.0.0
+      hast-util-is-element: 3.0.0
+      unist-util-visit-parents: 6.0.1
+
   hast-util-from-html@2.0.3:
     dependencies:
       '@types/hast': 3.0.4
@@ -1890,6 +1900,10 @@ snapshots:
       vfile: 6.0.3
       vfile-location: 5.0.3
       web-namespaces: 2.0.1
+
+  hast-util-is-element@3.0.0:
+    dependencies:
+      '@types/hast': 3.0.4
 
   hast-util-parse-selector@4.0.0:
     dependencies:
