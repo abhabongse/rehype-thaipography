@@ -1,12 +1,14 @@
 /**
  * Controls how to adjust zero or more spaces at a certain location.
  *
- * Specifically, it first looks for zero or more spaces at a certain location
+ * Specifically, it first looks for zero or more
+ * [U+0020 spaces](https://www.compart.com/en/unicode/U+0020)
+ * at a certain location
  * such as before Maiyamok or between the Era and the year number.
  * Then, some (or all) of these spaces may get removed,
  * and some certain characters may get inserted.
  *
- * Note:
+ * **Note:**
  *
  * - `noop` actions are equivalent to `insert` with empty character additions.
  * - `delete` actions are equivalent to `replace` with empty character replacements.

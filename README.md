@@ -120,7 +120,7 @@ see [API reference on Year and Era][docs:option/yearAndEra].
 
 This plugin does *not* yet support the following typographic rules.
 Please put in a request in a [discussion thread][github:package/discussion],
-or wait until when I need it (which is à Pâques ou à la Trinité).
+or wait until when I need it (like the saying *à Pâques ou à la Trinité*).
 
 - Space between prefix (including titles or honorifics) and the entity name, including:
   - Normal individual: "นาย", "นาง", "นางสาว", "ด.ช.", "ด.ญ."
@@ -128,9 +128,9 @@ or wait until when I need it (which is à Pâques ou à la Trinité).
   - Companies and partnerships: "บจก.", "หจก.", "บมจ.", "บลจ."
   - Legislations: "พ.ร.บ.", "พ.ร.ก.", "พ.ร.ฎ."
 - Character cluster substitution such as:
-  - "แ" <- "เ" + "เ"
-  - "อำ" <- "อํ" + "า"
-  - "ฤๅ" <- "ฤ" + "า"
+  - "แ" from "เ" + "เ"
+  - "อำ" from "อํ" + "า"
+  - "ฤๅ" from "ฤ" + "า"
 
 
 ## API Reference
