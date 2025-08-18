@@ -8,6 +8,11 @@
     "./types": "./src/types.ts"
   },
   "publish": {
-    "exclude": [".github", ".idea", ".mise", ".prettierignore"]
+    "include": [
+      "src",
+      "package.json",
+      "LICENSE",
+      "README.md"
+    ]
   }
 }
